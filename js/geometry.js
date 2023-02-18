@@ -20,12 +20,15 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
 
 
 
-    const triangleFormula = 0.5 * triangleInputb * triangleInputh
+    // const triangleFormula = 0.5 * triangleInputb * triangleInputh
 
-
-    // button create
-    // const buttonCreate = document.createElement('button');
-    // buttonCreate.innerHTML = 'click me'
+    if (isNaN(triangleInputb, triangleInputh) || triangleInputh < 1) {
+        const triangleFormula = 0.5 * triangleInputb * triangleInputh
+        return triangleFormula;
+      }
+      else {
+        
+      };
 
     const tableContainer = document.getElementById('table-container');
 
@@ -128,3 +131,8 @@ document.getElementById('btn-paralleologram').addEventListener('click', function
 
 
 });
+
+
+document.getElementById('btn-blog').addEventListener('click', function(){
+    window.location.href = 'question.html';
+})
