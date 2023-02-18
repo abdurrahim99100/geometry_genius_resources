@@ -95,28 +95,6 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
     tableContainer.appendChild(triangleTr);
     }
 
-
-
-
-    // const rectangleFormula = rectangleInput * rectangleInputI;
-    
-
-
-    // const tableContainer = document.getElementById('table-container');
-
-    // const triangleTr = document.createElement('tr');
-    // triangleTr.innerHTML = ` 
-    
-    //     <td>${2}</td>
-    //     <td>${rectangleText}</td>
-    //     <td>${rectangleFormula}cm<sup>2</sup></td>
-    //     <td>
-    //         <button class = "bg-yellow-400 hover:bg-violet-400 rounded px-4 py-2">Convert to m<sup>2</sup></button>
-    //     </td>
-    // `;
-    // tableContainer.appendChild(triangleTr);
-
-
 });
 
 
