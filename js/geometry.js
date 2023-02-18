@@ -4,6 +4,8 @@ claculation;
 /*
 problem -1;
 */
+
+
 document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangleInputFieldb = document.getElementById('triangle-inputfield1');
     const triangleInputField1String = triangleInputFieldb.value;
@@ -18,17 +20,12 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangleField = document.getElementById('triangle-text');
     const triangleText = triangleField.innerText;
 
-
-
-    // const triangleFormula = 0.5 * triangleInputb * triangleInputh
-
-    if (isNaN(triangleInputb, triangleInputh) || triangleInputh < 1) {
+    if(isNaN(triangleInputb) || triangleInputb === '' || triangleInputb <=0 || isNaN(triangleInputh) || triangleInputh == '' || triangleInputh <=0){
+        return alert ('please valid number');
+    }
+    else{
         const triangleFormula = 0.5 * triangleInputb * triangleInputh
-        return triangleFormula;
-      }
-      else {
-        
-      };
+
 
     const tableContainer = document.getElementById('table-container');
 
@@ -43,9 +40,11 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
         </td>
     `;
     tableContainer.appendChild(triangleTr);
-
+    }
 
 });
+
+
 
 
 
@@ -70,6 +69,13 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
     const rectangleText = rectangleField.innerText;
 
 
+
+
+
+    if(isNaN(rectangleInput) || rectangleInput === '' || rectangleInput <=0 || isNaN(rectangleInputI) || rectangleInputI == '' || rectangleInputI <=0){
+        return alert ('please valid number');
+    }
+    else{
     const rectangleFormula = rectangleInput * rectangleInputI;
     
 
@@ -87,6 +93,28 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
         </td>
     `;
     tableContainer.appendChild(triangleTr);
+    }
+
+
+
+
+    // const rectangleFormula = rectangleInput * rectangleInputI;
+    
+
+
+    // const tableContainer = document.getElementById('table-container');
+
+    // const triangleTr = document.createElement('tr');
+    // triangleTr.innerHTML = ` 
+    
+    //     <td>${2}</td>
+    //     <td>${rectangleText}</td>
+    //     <td>${rectangleFormula}cm<sup>2</sup></td>
+    //     <td>
+    //         <button class = "bg-yellow-400 hover:bg-violet-400 rounded px-4 py-2">Convert to m<sup>2</sup></button>
+    //     </td>
+    // `;
+    // tableContainer.appendChild(triangleTr);
 
 
 });
