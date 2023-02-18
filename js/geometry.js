@@ -14,23 +14,35 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const triangleInputFieldhString = triangleInputFieldh.value;
     const triangleInputh = parseFloat(triangleInputFieldhString);
 
-
+    // triangle value;
+    const triangleField = document.getElementById('triangle-text');
+    const triangleText = triangleField.innerText;
 
 
 
     const triangleFormula = 0.5 * triangleInputb * triangleInputh
-    console.log(triangleFormula);
 
 
-    // // if (triangleInputh == Number) {
-    // //     const triangleFormula = 0.5 * triangleInputb * triangleInputh
-    // //     console.log(triangleFormula);
-    // }
-    // else {
-    //     console.log('please Enter the number');
-    // }
+    // button create
+    // const buttonCreate = document.createElement('button');
+    // buttonCreate.innerHTML = 'click me'
 
-})
+    const tableContainer = document.getElementById('table-container');
+
+    const triangleTr = document.createElement('tr');
+    triangleTr.innerHTML = ` 
+    
+        <td>${1}</td>
+        <td>${triangleText}</td>
+        <td>${triangleFormula}cm<sup>2</sup></td>
+        <td>
+            <button class = "bg-yellow-400 hover:bg-violet-400 rounded px-4 py-2">Convert to m<sup>2</sup></button>
+        </td>
+    `;
+    tableContainer.appendChild(triangleTr);
+
+
+});
 
 
 
@@ -40,18 +52,79 @@ problem -2;
 "rectangle"
 */
 
-document.getElementById('btn-rectangle').addEventListener('click', function(){
+document.getElementById('btn-rectangle').addEventListener('click', function () {
     const rectangleInputFieldW = document.getElementById('rectangle-input-fild');
     const rectangleInputFieldWString = rectangleInputFieldW.value;
     const rectangleInput = parseFloat(rectangleInputFieldWString);
-    
+
 
     const rectangleInputFieldi = document.getElementById('rectangle-input-fildI');
     const rectangleInputFieldiString = rectangleInputFieldi.value;
     const rectangleInputI = parseFloat(rectangleInputFieldiString);
-    
+
+
+    const rectangleField = document.getElementById('triangle-text');
+    const rectangleText = rectangleField.innerText;
+
 
     const rectangleFormula = rectangleInput * rectangleInputI;
-    console.log(rectangleFormula);
+    
 
-})
+
+    const tableContainer = document.getElementById('table-container');
+
+    const triangleTr = document.createElement('tr');
+    triangleTr.innerHTML = ` 
+    
+        <td>${2}</td>
+        <td>${rectangleText}</td>
+        <td>${rectangleFormula}cm<sup>2</sup></td>
+        <td>
+            <button class = "bg-yellow-400 hover:bg-violet-400 rounded px-4 py-2">Convert to m<sup>2</sup></button>
+        </td>
+    `;
+    tableContainer.appendChild(triangleTr);
+
+
+});
+
+
+
+/*
+problem -3
+"parallelogram"
+*/
+
+document.getElementById('btn-paralleologram').addEventListener('click', function(){
+    
+    const plgInputFildB = document.getElementById('plgb-input');
+    const plgbInputString = plgInputFildB.value;
+    const plgbInput = parseFloat(plgbInputString);
+
+    
+    const plghInputField =document.getElementById('plgh-input');
+    const plghInputString = plghInputField.value;
+    const plghInput = parseFloat(plghInputString);
+    // calculate paralal;
+    const paralalCalculat = plgbInput * plghInput;
+    
+    const parallelogram = document.getElementById('text-paralal');
+    const paralalText = parallelogram.innerText;
+    
+    
+    const tableContainer = document.getElementById('table-container');
+
+    const triangleTr = document.createElement('tr');
+    triangleTr.innerHTML = ` 
+    
+        <td>${3}</td>
+        <td>${paralalText}</td>
+        <td>${paralalCalculat}cm<sup>2</sup></td>
+        <td>
+            <button class = "bg-yellow-400 hover:bg-violet-400 rounded px-4 py-2">Convert to m<sup>2</sup></button>
+        </td>
+    `;
+    tableContainer.appendChild(triangleTr);
+
+
+});

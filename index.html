@@ -35,15 +35,15 @@
     <!-- main section -->
     <main class="container mx-auto">
         <!-- geo items -->
-        <div class="grid grid-cols-4 gap-x-10 gap-y-10 my-20">
+        <div class="grid sm:grid-cols-1 xl:grid-cols-4 gap-x-10 gap-y-10 my-20">
             
             
             
             
-            <!-- triangle start -->
+            <!-- triangle start-1 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/triangle.png" alt="">
-                <h1 class="text-2xl font-semibold">Triangle</h1>
+                <h1 id="triangle-text" class="text-2xl font-semibold">Triangle</h1>
                 <label class="my-3" for="">area (a) = 0.5 x b x h</label>
                 <div>
                     <input id="triangle-inputfield1" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
@@ -56,7 +56,7 @@
 
 
 
-            <!-- rectangle start -->
+            <!-- rectangle start-2 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/rectangle.png" alt="">
                 <h1 class="text-2xl font-semibold">Rectangle</h1>
@@ -73,90 +73,87 @@
 
 
 
-            <!-- parallelogram start -->
+            <!-- parallelogram start-3 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/parallelogram.png" alt="">
-                <h1 class="text-2xl font-semibold">Parallelogram</h1>
+                <h1 id="text-paralal" class="text-2xl font-semibold">Parallelogram</h1>
                 <label class="my-1" for="">Area (A) = b x h</label>
                 <label class="mb-1" for="">b=10cm, h=12cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input id="plgb-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
+                    <input id="plgh-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-paralleologram" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
 
 
 
 
             <!-- output section start -->
-            <div class="flex flex-col items-center py-14 shadow-2xl rounded">
-                <!-- <img src="images/triangle.png" alt="">
-                <h1 class="text-2xl font-semibold">Triangle</h1>
-                <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
-                <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
-                    <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
-                    <label for="">cm</label>
-                </div> -->
-                <h1 class="underline text-2xl">Area Calculation</h1>
+            <div class="flex flex-col py-14 shadow-2xl rounded">
+                <h1 class="underline text-2xl text-center">Area Calculation</h1>
+                <!-- calculation out put -->
+                <table class="mx-5 my-10">
+                    <tbody id="table-container" class="">
+                        
+                    </tbody>                    
+                </table>
             </div>
 
 
 
 
-            <!-- rhombus section start -->
+            <!-- rhombus section start-4 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/rhombus.png" alt="">
-                <h1 class="text-2xl font-semibold">Rhombus</h1>
+                <h1 id="rhombus-text" class="text-2xl font-semibold">Rhombus</h1>
                 <label class="my-1" for="">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></label>
                 <label class="mb-1" for="">d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
+                    <input id="rhombus-d1" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
+                    <input id="rhombus-d2" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-rhombus" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
 
 
 
 
-            <!-- pentagon section start -->
+            <!-- pentagon section start-5 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/pentagon.png" alt="">
-                <h1 class="text-2xl font-semibold">Pentagon</h1>
+                <h1 id="pentagon-text" class="text-2xl font-semibold">Pentagon</h1>
                 <label class="my-1" for="">Area (A) = 0.5 x p x b</label>
                 <label class="mb-1" for="">p=6cm, b=10cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="p">
+                    <input id="gonp-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="p">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input id="gonb-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-pentagon" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
 
 
 
 
-            <!-- ellipie section start -->
+            <!-- ellipie section start-6 -->
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/ellipse.png" alt="">
-                <h1 class="text-2xl font-semibold">Ellipse</h1>
-                <label class="my-1" for="">Area (A) = 0.5 x <img class="inline" src="images/icons/pi-mathematical-constant-symbol.png" alt="">ab</label>
-                <label class="mb-1" for="">b=10cm, b=4cm</label>
+                <h1 id="ellipse-text" class="text-2xl font-semibold">Ellipse</h1>
+                <label class="my-1" for="">Area (A) =<img class="inline" src="images/icons/pi-mathematical-constant-symbol.png" alt="">ab</label>
+                <label class="mb-1" for="">a=10cm, b=4cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input id="ellipsea-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="a">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
+                    <input id="ellipseb-input" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-ellipse" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
         </div>
 
@@ -175,6 +172,7 @@
 
     <!-- js file add -->
     <script src="js/geometry.js"></script>
+    <script src="js/geometry-two.js"></script>
 </body>
 
 </html>
