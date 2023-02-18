@@ -9,6 +9,8 @@
     <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- END -->
+    <!-- font awsome link -->
+    <script src="https://kit.fontawesome.com/c39a3c87b7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,7 +22,7 @@
                 <p class="font-semibold text-gray-700">Geometry</p>
             </div>
             <div>
-                <button class="px-4 py-2 text-white rounded text-2xl font-bold"
+                <button id="" class="px-4 py-2 text-white rounded text-2xl font-bold"
                     style="background-color: #1090D8;">Blog</button>
             </div>
         </div>
@@ -42,14 +44,14 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/triangle.png" alt="">
                 <h1 class="text-2xl font-semibold">Triangle</h1>
-                <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
+                <label class="my-3" for="">area (a) = 0.5 x b x h</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input id="triangle-inputfield1" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
+                    <input id="triangle-inputfieldh" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-triangle" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
 
 
@@ -58,14 +60,14 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/rectangle.png" alt="">
                 <h1 class="text-2xl font-semibold">Rectangle</h1>
-                <label class="my-3" for="">Area (A) = w x I</label>
+                <label class="my-3" for="">Area (A) = W x I</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="W">
+                    <input id="rectangle-input-fild" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="W">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="I">
+                    <input id="rectangle-input-fildI" class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="I">
                     <label for="">cm</label>
                 </div>
-                <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
+                <button id="btn-rectangle" class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
             </div>
 
 
@@ -75,7 +77,8 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/parallelogram.png" alt="">
                 <h1 class="text-2xl font-semibold">Parallelogram</h1>
-                <label class="my-3" for="">Area (A) = b x h</label>
+                <label class="my-1" for="">Area (A) = b x h</label>
+                <label class="mb-1" for="">b=10cm, h=12cm</label>
                 <div>
                     <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
@@ -89,7 +92,7 @@
 
 
             <!-- output section start -->
-            <div class="flex flex-col underline text-2xl items-center py-14 shadow-2xl rounded">
+            <div class="flex flex-col items-center py-14 shadow-2xl rounded">
                 <!-- <img src="images/triangle.png" alt="">
                 <h1 class="text-2xl font-semibold">Triangle</h1>
                 <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
@@ -99,7 +102,7 @@
                     <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
                     <label for="">cm</label>
                 </div> -->
-                <h1 class="">Area Calculation</h1>
+                <h1 class="underline text-2xl">Area Calculation</h1>
             </div>
 
 
@@ -109,11 +112,12 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/rhombus.png" alt="">
                 <h1 class="text-2xl font-semibold">Rhombus</h1>
-                <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
+                <label class="my-1" for="">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></label>
+                <label class="mb-1" for="">d<sub>1</sub>=16cm, d<sub>2</sub>=8cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
+                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="d">
                     <label for="">cm</label>
                 </div>
                 <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
@@ -126,11 +130,12 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/pentagon.png" alt="">
                 <h1 class="text-2xl font-semibold">Pentagon</h1>
-                <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
+                <label class="my-1" for="">Area (A) = 0.5 x p x b</label>
+                <label class="mb-1" for="">p=6cm, b=10cm</label>
                 <div>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
+                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="p">
                     <label for="">cm</label>
-                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="h">
+                    <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
                 </div>
                 <button class="bg-blue-500 px-5 py-2 text-white text-2xl rounded my-5 font-semibold">Calculate</button>
@@ -143,7 +148,8 @@
             <div class="flex flex-col justify-center items-center py-14 shadow-2xl rounded">
                 <img src="images/ellipse.png" alt="">
                 <h1 class="text-2xl font-semibold">Ellipse</h1>
-                <label class="my-3" for="">area (a) = 0.5 x b x 8</label>
+                <label class="my-1" for="">Area (A) = 0.5 x <img class="inline" src="images/icons/pi-mathematical-constant-symbol.png" alt="">ab</label>
+                <label class="mb-1" for="">b=10cm, b=4cm</label>
                 <div>
                     <input class="w-20 bg-gray-200 rounded px-1" type="text" placeholder="b">
                     <label for="">cm</label>
@@ -164,6 +170,11 @@
 
     </footer>
     <!-- END -->
+
+
+
+    <!-- js file add -->
+    <script src="js/geometry.js"></script>
 </body>
 
 </html>
