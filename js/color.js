@@ -5,5 +5,9 @@ function generatColor(){
     color = '#';
     for(var i = 0; i<6; i++){
         color = color + symbols[Math.floor(Math.random() * 16)];
+
     }
 }
+
+
+
